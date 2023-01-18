@@ -22,7 +22,7 @@
     --card-padding: 1.6rem;
     --padding-1: 1.2rem;
 
-    --box-shadow: 0rem 1.0rem 1.4rem 1.5rem var(--color-light);
+    --box-shadow: 0rem 1rem 1.4rem 1.5rem var(--color-light);
 }
 
 *{
@@ -55,7 +55,7 @@ body{
     display: grid;
     width: 96%;
     margin: 0 auto;
-    background: rgb(245, 244, 244);
+    background: rgb(247, 245, 245);
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
 }
@@ -255,7 +255,9 @@ main .insights > div{
 }
 
 main .insights > div:hover{
-    box-shadow:var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    transition: 0.8s;
 }
 
 main .insights > div span{
@@ -266,13 +268,17 @@ main .insights > div span{
     font-size: 2rem;
 }
 
+
+main .insights > div.sales span{
+    background: var(--color-primary);
+}
 main .insights > div.expenses span{
     background: var(--color-danger);
 }
-
 main .insights > div.income span{
     background: var(--color-success);
 }
+
 
 main .insights > div .middle{
     display: flex;
@@ -287,4 +293,29 @@ main .insights h3{
 
 main .insights .progress{
     position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
 }
+
+main .insights svg{
+    width: 6.6rem;
+    height: 6.4rem;
+}
+
+main .insights svg circle{
+    fill:none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(8px,5px);
+    stroke-dasharray: 112;
+    stroke-dashoffset: 92;
+}
+
+main .insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+
