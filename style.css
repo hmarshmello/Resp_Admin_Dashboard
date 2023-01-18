@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
 
 :root{
     --color-primary: #6984fd;
@@ -12,7 +14,7 @@
     --color-light: rgba(132,139,200,0.18);
     --color-primary-variant: #me88;
     --color-dark-variant: #677483;
-    --color-background: #ffffff;
+    --color-background: rgb(239, 238, 238);
 
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
@@ -23,6 +25,9 @@
     --padding-1: 1.2rem;
 
     --box-shadow: 0rem 1rem 1.4rem 1.5rem var(--color-light);
+
+    --circle-width: 0.09em;
+    --circle-hover: 0.07em
 }
 
 *{
@@ -53,10 +58,10 @@ body{
 
 .container{
     display: grid;
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
-    background: rgb(247, 245, 245);
-    gap: 03rem;
+    background: rgb(239, 238, 238);
+    gap: 3rem;
     grid-template-columns: 14rem auto 0rem;
 }
 
@@ -126,8 +131,8 @@ b{
 /*==ASIDE==*/
 
 aside{
-    height: 100vh;
-    background: rgb(255, 255, 255);
+    height: 50rem;
+    background: rgb(254, 254, 254);
 }
 aside.top{
     background-color: rgb(255, 255, 255);
@@ -151,10 +156,10 @@ aside .close{
 /* ==Sidebar== */
 
 aside .sidebar{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
+    color: rgb(249, 249, 249);
     display: flex;
     flex-direction: column;
-    height: 86vh;
     position: relative;
     top: 3rem;
 }
@@ -181,8 +186,9 @@ aside .sidebar a span{
 
 aside .sidebar a:last-child{
     position: absolute;
-    bottom: 2rem;
-     width: 100%;
+    overflow-wrap: break-word;
+    top: 40rem;
+    width: 98%;
 }
 
 aside .sidebar a.active{
@@ -223,7 +229,7 @@ aside .sidebar .message-count{
 
 main{
     margin-top: 1.4rem;
-    overflow-x:auto;
+    overflow-x:visible;
 }
 main .date{
     display:inline-block;
@@ -239,7 +245,7 @@ main .date input[type='date']{
 main .insights{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: auto;
+    gap: 1rem;
 }
 main .insights > div{
     background: var(--color-white);    
@@ -286,6 +292,7 @@ main .insights .progress{
     height: 92px;
     border-radius: 50%;
 }
+/*
 main .insights svg{
     width: 6.6rem;
     height: 6.4rem;
@@ -303,6 +310,7 @@ main .insights .sales svg circle{
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
 }
+*/
 
 /*==FOOTER==*/
 

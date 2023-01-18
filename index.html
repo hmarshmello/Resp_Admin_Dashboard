@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsice Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Resp Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./sstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,8 +20,6 @@
     <!--Material icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
       rel="stylesheet">
-    <!--StyleSheet-->
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -72,7 +71,7 @@
                         <span class="material-icons-sharp">add</span>
                         <h3>Add Product</h3>
                     </a>
-                    <a href="#">
+                    <a href="#" class="logout">
                         <span class="material-icons-sharp">logout</span>
                         <h3>Logout</h3>
                     </a>
@@ -97,8 +96,14 @@
                             <svg>
                                 <circle cx='38' cy='38' r='36'></circle>
                             </svg>
-                            <div class="number">
-                                <p>81%</p>
+                            <div class="wrapper">
+                                <div class="c100 p90 pink">
+                                    <span>90%</span>
+                                    <div class="slice">
+                                      <div class="bar"></div>
+                                      <div class="fill"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
