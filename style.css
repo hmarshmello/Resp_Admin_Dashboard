@@ -195,6 +195,7 @@ aside .sidebar a.active{
     background: var(--color-light);
     color: var(--color-primary);
     margin-left: 0;
+    transiton: none;
 }
 
 aside .sidebar a.active:before{
@@ -215,6 +216,7 @@ aside .sidebar a:hover{
 
 aside .sidebar a:hover span{
     margin-left: 1rem;
+    transition: none;
 }
 
 aside .sidebar .message-count{
