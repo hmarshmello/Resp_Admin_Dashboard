@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resp Dashboard</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./sstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,6 +79,8 @@
         <!--END OF ASIDE-->
         <main>
             <h1>Dashboard</h1>
+            <h4><span id="time"></span></h4>
+            <script src="index.js"></script>
             <div class="date">
                 <input type="date">
             </div>
@@ -96,14 +97,8 @@
                             <svg>
                                 <circle cx='38' cy='38' r='36'></circle>
                             </svg>
-                            <div class="wrapper">
-                                <div class="c100 p90 pink">
-                                    <span>90%</span>
-                                    <div class="slice">
-                                      <div class="bar"></div>
-                                      <div class="fill"></div>
-                                    </div>
-                                </div>
+                            <div class="number">
+                                    <p>9%</p>
                             </div>
                         </div>
                     </div>

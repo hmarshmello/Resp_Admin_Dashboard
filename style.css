@@ -292,7 +292,6 @@ main .insights .progress{
     height: 92px;
     border-radius: 50%;
 }
-/*
 main .insights svg{
     width: 6.6rem;
     height: 6.4rem;
@@ -310,7 +309,6 @@ main .insights .sales svg circle{
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
 }
-*/
 
 /*==FOOTER==*/
 
