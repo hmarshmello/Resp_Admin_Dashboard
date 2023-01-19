@@ -212,11 +212,11 @@ aside .sidebar a.active span{
 
 aside .sidebar a:hover{
     color: var(--color-primary);
+    transition: none;
 }
 
 aside .sidebar a:hover span{
     margin-left: 1rem;
-    transition: none;
 }
 
 aside .sidebar .message-count{
