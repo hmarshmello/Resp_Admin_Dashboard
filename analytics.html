@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resp Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@100&family=Sora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h2>HMARSH <span class="danger">MELLO</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                    <a href="index.html">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="blog.html">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Customers</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Orders</h3>
+                    </a>
+                    <a href="#" class="active">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">inventory</span>
+                        <h3>Products</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">report</span>
+                        <h3>Reports</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Add Product</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+            </div>
+        </aside>
+    <!-- ----blog page content------ -->
+    <main>
+        <script type='text/javascript' src='https://us-east-1.online.tableau.com/javascripts/api/viz_v1.js'></script>
+        <div class='tableauPlaceholder' id='viz1674552650242' style='position: relative' overflow="hidden">
+            <noscript><a href='#'><img alt='Overview ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SU&#47;SUPERSTORESALESDASHBOARD_16735430070070&#47;Overview&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='SUPERSTORESALESDASHBOARD_16735430070070&#47;Overview' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SU&#47;SUPERSTORESALESDASHBOARD_16735430070070&#47;Overview&#47;1.png' /> 
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+                <param name='ignore_sticky_session' value='yes' />
+            </object>
+        </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1674552650242');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='1200px';vizElement.style.height='927px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </main>
+    </div>
+      <!-- --------footer -------- -->
+  </body>
+</html>
