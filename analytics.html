@@ -21,6 +21,8 @@
       rel="stylesheet">
     <!--StyleSheet-->
     <link rel="stylesheet" href="./style.css">
+    <!--Tableau JS API-->
+    <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -78,38 +80,32 @@
                     </a>
             </div>
         </aside>
-    <!-- ----blog page content------ -->
-    <main>
-        <script type='text/javascript' src='https://us-east-1.online.tableau.com/javascripts/api/viz_v1.js'></script>
-        <div class='tableauPlaceholder' id='viz1674552650242' style='position: relative' overflow="hidden">
-            <noscript><a href='#'><img alt='Overview ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SU&#47;SUPERSTORESALESDASHBOARD_16735430070070&#47;Overview&#47;1_rss.png' style='border: none' /></a>
-            </noscript>
-            <object class='tableauViz'  style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-                <param name='name' value='SUPERSTORESALESDASHBOARD_16735430070070&#47;Overview' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SU&#47;SUPERSTORESALESDASHBOARD_16735430070070&#47;Overview&#47;1.png' /> 
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-GB' />
-                <param name='ignore_sticky_session' value='yes' />
-            </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1674552650242');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            vizElement.style.width='1200px';vizElement.style.height='927px';                    
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
-    </main>
+    <!-- ----Sidebar------ -->
+    
+        <main>
+            <div id="vizContainer"></div>
+            <script src="initViz.js"></script>
+            <!-- --------Viz ----------- -->
+
+            <section class="footer">
+                <a>
+                <h4>About Us</h4>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vitae
+                accusamus labore laboriosam minus.<br />
+                Repellat, ut amet error nostrum incidunt quasi non nulla expedita.
+                </p>
+                <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                </div>
+                <p>Made with <i class="fa fa-heart-o"></i> by Harsh Shrivastava</p>
+                </a>
+            </section>
+            <!-- --------footer -------- -->
+        </main>
     </div>
-      <!-- --------footer -------- -->
   </body>
 </html>
