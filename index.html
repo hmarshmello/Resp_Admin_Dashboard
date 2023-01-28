@@ -94,12 +94,12 @@
                             <h1>$23,244</h1>
                         </div>
                         <div class="progess">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
+                            <svg id="circle">
+                                <circle id="success-value" r="36" cx="38" cy="38" stroke-dasharray="660, 660">
+                                </circle>
                             </svg>
-                            <div class="number">
-                                    <p>91%</p>
-                            </div>
+                            <div><p id="value"></p></div>
+                            <script src="salesJS.js"></script>  <!--percentCircle-->       
                         </div>
                     </div>
                     <small class="text-muted"> Last 24 Hours</small>
@@ -113,12 +113,12 @@
                             <h1>$14,875</h1>
                         </div>
                         <div class="progess">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
+                            <svg id="circle">
+                                <circle id="success-exp-value" r="36" cx="38" cy="38" stroke-dasharray="660, 660">
+                                </circle>
                             </svg>
-                            <div class="number">
-                                <p>62%</p>
-                            </div>
+                            <div><p id="expsvalue"></p></div>
+                            <script src="expJS.js"></script> <!--percentCircle-->       
                         </div>
                     </div>
                     <small class="text-muted"> Last 24 Hours</small>
@@ -132,18 +132,20 @@
                             <h1>$10,748</h1>
                         </div>
                         <div class="progess">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
+                            <svg id="circle">
+                                <circle id="success-inc-value" r="36" cx="38" cy="38" stroke-dasharray="660, 660">
+                                </circle>
                             </svg>
-                            <div class="number">
-                                <p>44%</p>
-                            </div>
+                            <div><p id="inc-value"></p></div>
+                            <script src="incJS.js"></script> 
                         </div>
                     </div>
                     <small class="text-muted"> Last 24 Hours</small>
                 </div>
                 <!----END OF INCOME---->
             </div>
+            
+            <!---Start Of Footer--->
             <section class="footer">
                 <a>
                 <h4>About Us</h4>
@@ -161,8 +163,8 @@
                 <p>Made with <i class="fa fa-heart-o"></i> by Harsh Shrivastava</p>
                 </a>
             </section>
+            <!---End Of Footer--->
         </main>
     </div>
-    <!-- --------footer -------- -->
 </body>
 </html> 
