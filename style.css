@@ -232,7 +232,7 @@ aside .sidebar .message-count{
 main{
     margin-top: 1.4rem;
     margin-left: 15rem;
-    margin-right: auto;
+    margin-right: 2rem;
     overflow-x:visible;
 }
 main .date{
