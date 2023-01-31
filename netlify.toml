@@ -1,4 +1,4 @@
 [build]
   base = "/"
-  publish = "Resp_Admin_Dashboard/"
+  publish = "/"
   command = ""
