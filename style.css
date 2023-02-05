@@ -245,6 +245,7 @@ main .date input[type='date']{
     color: var(--color-dark);
 }
 
+
 /*===INSIGHTS===*/
 main .insights{
     display:grid;
