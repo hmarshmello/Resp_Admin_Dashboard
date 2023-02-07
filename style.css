@@ -350,9 +350,9 @@ main table tbody tr:last-child td{
     border: none;
 }
 main .recent-order a {
-    display:inline;
+    margin-top: 1rem;
     margin-left: 35rem;
-    position: absolute;
+    display:grid;
     color: var(--color-primary);
 }
 
